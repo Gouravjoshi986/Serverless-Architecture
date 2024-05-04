@@ -27,3 +27,19 @@ Cloudflare Workers
 https://workers.cloudflare.com/ 
 
 We are using cloudflare initially. 
+
+# when to use serverless backend
+When you have to get off the ground fast and don’t want to worry about deployments.
+When you can’t anticipate the traffic and don’t want to worry about autoscaling.
+If you have very low traffic and want to optimise for costs.
+
+Just go to workers and pages section and create a worker to deploy a demo code on internet
+
+Blog for how cloudflare work https://developers.cloudflare.com/workers/reference/how-workers-works/#:~:text=Though%20Cloudflare%20Workers%20behave%20similarly,used%20by%20Chromium%20and%20Node
+
+# To initialize a worker 
+npm create cloudflare -- my-app  * Dont deploy the application initially 
+* Dependency = "wrangler": "^3.0.0"
+* npm run dev to start worker locally 
+
+* Cloudflare just expects you to write the logic of program. making of server is handled by them. 
