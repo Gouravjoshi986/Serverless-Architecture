@@ -79,8 +79,18 @@ export default {
 
 		// We call the `sayHello()` RPC method on the stub to invoke the method on the remote
 		// Durable Object instance
-		let greeting = await stub.sayHello("world");
+		// let greeting = await stub.sayHello("world");
 
-		return new Response(greeting);
+		// return new Response(greeting);
+		if(request.method=="GET"){
+			return Response.json({
+				message:"You sent a get request",
+			})
+		}
+		else{
+			return Response.json({
+				message:"You havent sent a get request"
+			})
+		}
 	},
 };

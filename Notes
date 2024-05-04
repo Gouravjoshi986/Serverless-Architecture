@@ -43,3 +43,11 @@ npm create cloudflare -- my-app  * Dont deploy the application initially
 * npm run dev to start worker locally 
 
 * Cloudflare just expects you to write the logic of program. making of server is handled by them. 
+
+* The user method id params etc info is given to us in the request prop 
+
+* You can login with your cloudflare account on terminal using npx wrangler login 
+and after your code is completed it can be deployed using 
+# npm run deploy    - > with this you can upload your backend to internet for free
+with this you will get a link of your backend 
+Due to the await calls in the function we are returning promise of the function output as return type. 
