@@ -1,0 +1,29 @@
+# Servers are used to host a web app. 
+you write backends in express and deploy it somewhere on the internet 
+the most used servers today are AWS GCP Azure etc. 
+in these type of servers you rent out a VM and auto scale your code on it. 
+
+But it comes with a fixed cost even if no one visits your website. 
+Auto scaling is problematic.
+third problem is Monitoring various servers to make sure no server is down .
+
+# Serverless Backe
+it means that the developer doesnt have to worry about the server. 
+The cloud operater will dynamically allocates and manages servers.
+
+On writing the code(routes) automatically deploys scales and charge you on per request basis 
+# Problem = Very expensive to scale ( high charge on per request at bigger scale)
+            Cold start problem --> the first request after no activity faces high latency 
+
+
+# There are many famous backend serverless providers - 
+AWS Lambda
+https://aws.amazon.com/pm/lambda/?trk=5cc83e4b-8a6e-4976-92ff-7a6198f2fe76&sc_channel=ps&ef_id=CjwKCAiAt5euBhB9EiwAdkXWO-i-th4J3onX9ji-tPt_JmsBAQJLWYN4hzTF0Zxb084EkUBxSCK5vhoC-1wQAvD_BwE:G:s&s_kwcid=AL!4422!3!651612776783!e!!g!!aws lambda!19828229697!143940519541
+
+Google Cloud Functions
+https://firebase.google.com/docs/functions
+
+Cloudflare Workers
+https://workers.cloudflare.com/ 
+
+We are using cloudflare initially. 
