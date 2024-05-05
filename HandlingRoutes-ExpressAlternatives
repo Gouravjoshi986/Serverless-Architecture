@@ -1,0 +1,17 @@
+You cant use express in cloudflare workers as express heavily relies on node js and its dependencies but workers dont run on node js runtime. 
+
+Methods to use express -> 
+* Either use differant libraries . Eg- Hono / Lukeed / Worktop etc
+* You can split all your handlers in a file
+Create a generic handler that you can forward requests to from either express or hono or native cloudflare handler
+
+For ex - Adding the function to find a user using the mongoose library in user.ts 
+and writing other function in express router or cloudflare router
+
+* Using HONO -> 
+* npm create hono@latest my-app
+* now you will get a basic boiler plate code of hono 
+In hono you you can use one parameter ( c ) for both req and res tasks. 
+For giving response use c.text or c.json 
+
+
