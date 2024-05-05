@@ -10,7 +10,11 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240502.0",
+    "prisma": "^5.13.0",
     "typescript": "^5.0.4",
     "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "@prisma/extension-accelerate": "^1.0.0"
   }
 }

@@ -94,6 +94,7 @@ web_modules/
 
 # dotenv environment variable files
 
+wrangler.toml
 .env
 .env.development.local
 .env.test.local

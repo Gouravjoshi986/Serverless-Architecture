@@ -1,0 +1,17 @@
+connecting to a database in a serverless env is hard as a serverless env will have a large amount of workers working seperately and all of these workers wil try to form a connection with the database , this will lead to breaching of the maximum no of allowed connections to db.   
+
+To tackle this problem we developed an architecture known as connection pool. 
+we will connect many workers to a pool. 
+that single pool will then connect with the db. 
+
+For detailed info 
+https://www.prisma.io/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare 
+
+Steps : 
+a.   Create a new worker for cloudflare npm create cloudflare@latest 
+b.   create a prisma file using    npm i --save-dev prisma 
+c.   npx prisma init 
+d.   get your connection string of database that you want to use and store it in .env file 
+e.   Go to prisma accelerate and enable accelerate to create a connection pool and generate its connection string.   
+f.  Insert this connection string as your url string in prisma schema and add it to wrangler.toml file as DATABASE_URL="....." . this is a connection pool connected with your db 
+g.   Now add your direct url also to prisma schema to aid in migrations etc (optional)

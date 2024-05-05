@@ -3,6 +3,8 @@ name = "serverless"
 main = "src/index.ts"
 compatibility_date = "2024-05-02"
 
+CONNECTIONPOOL_URL = "prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiYmQwYTc1Y2ItNjViZC00YjdkLWFjZjMtYzEyN2MwYWI2NDEzIiwidGVuYW50X2lkIjoiNDU5ZDM1NTY2NDg0YmMyOTQ5YWM1YTNhMGRlYjBmNGU2NzU3MDZkMTQ2MDExMmUzMzQyZmEzZTE2MDNlMTc3MyIsImludGVybmFsX3NlY3JldCI6IjUwMTE3MjM1LTNiMDctNGYxMy1hNWQ4LTFkNGJhM2JhYzZkZiJ9.ivhRY1pJz_XeFIrUle7u54rQzgV9oWjyPtbCqtsvYmQ"
+
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Worker, running it closer to your back-end infrastructure
 # rather than the end user may result in better performance.
